@@ -1,0 +1,9 @@
+*.js
+*.js.map
+package-lock.json
+/eta.ts
+/db.ts
+/lib/index.ts
+/static/js/node_modules
+/static/js/typings
+/static/js/db.ts

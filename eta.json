@@ -1,1 +1,17 @@
-{"css":{},"redirects":{},"dirs":{"controllers":[],"models":[],"staticFiles":[],"views":[],"lifecycleHandlers":[],"requestTransformers":[],"subpathHandlers":[]},"name":"mac-web-site","dependencies":[],"indexes":[],"hooks":{}}
+{
+  "css":{},
+  "redirects":{},
+  "dirs":{
+    "controllers":["controllers"],
+    "models":["models"],
+    "staticFiles":["static"],
+    "views":["views"],
+    "lifecycleHandlers":[],
+    "requestTransformers":[],
+    "subpathHandlers":[]
+  },
+    "name":"mac-web-site",
+    "dependencies":["crossroads-education/eta-db-partial", "crossroads-education/eta-web-shared"],
+    "indexes":[],
+    "hooks":{}
+  }
