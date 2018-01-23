@@ -4,8 +4,8 @@ import CourseSection from "./enums/CourseSection";
 import Resource from "./Resource";
 
 @orm.Entity()
-export default class Course {
-    public constructor(init: Partial<Course>) {
+export default class WebCourse {
+    public constructor(init: Partial<WebCourse>) {
         Object.assign(this, init);
     }
 
@@ -13,7 +13,13 @@ export default class Course {
     public id: number;
 
     @orm.Column({ nullable: false })
-    public title: CourseTitle;
+    public subject: string;
+
+    @orm.Column({ nullable: false })
+    public number: string;
+
+    @orm.Column({ nullable: false, name: "full_name" })
+    public name: string;
 
     @orm.Column({ nullable: false })
     public section: CourseSection;
