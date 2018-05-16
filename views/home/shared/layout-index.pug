@@ -4,6 +4,7 @@ include navbar-footer.pug
 
 block head
     link(rel="stylesheet" type="text/css" href="https://assets.iu.edu/brand/3.x/brand.css ")
+    
     link(
         rel="stylesheet", 
         type="text/css", 
@@ -11,6 +12,8 @@ block head
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", 
         crossorigin="anonymous"
         )
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js")
     block site_head
         
 block title
@@ -22,13 +25,13 @@ block body
     div#main-body
         div.container-fluid
           div.row
-            div.col-9
-              div.container-fluid
-                block site_body
-            div.col-3
-              +navbar-main 
-              block sidebar      
+            div.col-md-9
+              div.banner
+                block banner
+            div.col-md-3
+              +navbar-main       
                 
-        
+        div.container-fluid
+          block site_body
         +footer
     +iu-footer

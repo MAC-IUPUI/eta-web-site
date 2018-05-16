@@ -1,0 +1,140 @@
+
+
+/* mobile */
+@media (max-aspect-ratio: 3/2){
+
+  /* .........NAV BAR............ */
+  div.nav{
+    padding-right: 7%;
+  }
+  ul.navbar-main-site{
+    display:none;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  ul.nav-foot, ul.navbar-main{
+    font-weight: bold;
+  }
+
+  /*...........FOOTER..............*/
+
+  div.foot {
+    background-color:#333333;
+    color:#fffcf9;
+    padding-top:2%;
+  }
+  div.foot-top{
+    /* width:80%;
+    margin: auto; */
+  }
+
+  img.foot-top{
+    width:14rem;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+
+  div.foot a {
+    color:white;
+  }
+
+  div.foot a:hover {
+    color:#F16978;
+  }
+
+  ul.nav-foot {
+    padding-top:5%;
+    color:white;
+    text-align:center;
+    margin-right:10%;
+    height:100%;
+  }
+
+  div.row.socials {
+    width:13rem;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+
+  div.social {
+    display:inline-block;
+    background-color:#fffcf9;
+    border-radius:100%;
+    width:3rem;
+    height:3rem;
+    padding: .7rem 0 1rem 1.2rem;
+    margin: 2rem .5rem;
+  }
+}
+
+/* desktop */
+@media (min-aspect-ratio: 3/2){
+
+    div.nav{
+      padding-right: 7%;
+    }
+    ul.navbar-main-site li {
+      text-align:right;
+      font-weight: 700;
+    }
+
+    li{
+      list-style-type: none;
+    }
+
+    ul.weekdays, ul.nav-foot, ul.navbar-main{
+      font-weight: bold;
+    }
+
+
+    /*...........FOOTER..............*/
+
+    div.foot {
+      background-color:#333333;
+      color:#fffcf9;
+      padding:1rem 3rem;
+    }
+
+    div.foot-top {
+      padding: .5rem 0 -1rem 10%;
+    }
+
+    img.foot-top{
+      width:14rem;
+      margin-left: auto;
+      margin-right: auto;
+      display:block;
+    }
+
+    div.foot a {
+      color:white;
+    }
+
+    div.foot a:hover {
+      color:#F16978;
+    }
+
+    ul.nav-foot {
+      padding:4% 9% 0 0;
+      color:white;
+      text-align:center;
+      width:100%;
+      height:100%;
+    }
+
+    div.social {
+      display:inline-block;
+      background-color:#fffcf9;
+      border-radius:100%;
+      width:3rem;
+      height:3rem;
+      padding: .7rem 0 1rem 1.2rem;
+      margin: 11% .5rem 0;
+    }
+
+}

@@ -1,0 +1,118 @@
+
+
+
+ul.outer{
+  margin: 0;
+  padding: 0;
+}
+
+a.main {
+  color: #F16978;
+}
+
+
+
+/* mobile */
+@media (max-aspect-ratio: 3/2){
+  div.body.b-level.section-small:focus, div.body.b-level.section-small:focus-within {
+    width:100%;
+    height:100%;
+    color: black;
+    background-color:#EDEEEF;
+    padding-left:2rem;
+    outline:none;
+  }
+
+  div.body.c-level.section-small:focus, div.body.c-level.section-small:focus-within {
+    width:100%;
+    height:100%;
+    color: black;
+    padding-left:2rem;
+    background-color:#EDEEEF;
+    outline:none;
+  }
+
+  div.body.stats.section-small:focus, div.body.stats.section-small:focus-within {
+    width:100%;
+    height:100%;
+    color: black;
+    padding-left:2rem;
+    background-color:#EDEEEF;
+    outline:none;
+  }
+
+  div.subject{
+    padding:10% 1% 1% 4%;
+    text-align:left;
+  }
+
+  div.body.section-small {
+    width:13rem;
+  	height:5.5rem;
+    color:rgba(255, 255, 255, .01);
+    float:right;
+  	-webkit-transition: all .1s ;
+    transition: all .1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  	border-bottom: 2px solid #F16978;
+  	border-radius: 25px;
+  	overflow:hidden;
+  }
+
+  div.c-level, div.stats{
+    padding: 15% 5%;
+  }
+  div.b-level{
+    padding: 2% 5%;
+  }
+}
+
+
+/*desktop*/
+@media (min-aspect-ratio: 3/2){
+  div.body.b-level.section-small:focus, div.body.b-level.section-small:focus-within {
+    width:90%;
+    height:30rem;
+    background-color:#EDEEEF;
+    text-align: right;
+    outline:none;
+  }
+
+  div.body.c-level.section-small:focus, div.body.c-level.section-small:focus-within {
+    width:90%;
+    height:42rem;
+    background-color:#EDEEEF;
+    text-align: right;
+    outline:none;
+  }
+
+  div.body.stats.section-small:focus, div.body.stats.section-small:focus-within {
+    width:90%;
+    height:17rem;
+    background-color:#EDEEEF;
+    text-align: right;
+    outline:none;
+  }
+  a.main:hover {
+    color: #000;
+  }
+  div.subject{
+    padding:2% 1% 1% 4%;
+  }
+
+  div.body.section-small {
+    width:18rem;
+  	height:4.5rem;
+    padding:1%;
+    float:right;
+  	-webkit-transition: all .1s ;
+    transition: all .1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  	border-bottom: 2px solid #F16978;
+  	border-radius: 25px;
+  	overflow:hidden;
+  }
+
+}

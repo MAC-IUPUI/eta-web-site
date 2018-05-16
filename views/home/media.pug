@@ -1,0 +1,48 @@
+extends ./shared/layout.pug
+
+
+block site_body
+    div.row.justify-content-md-right.section2
+      div.col-md-12
+          h1.headline-lg Media.
+          br
+              
+    div.row.justify-content-md-right.section-breakout
+        //facebook
+        div.col-md-4
+          iframe.facebookWidget.float-right(
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMacAtIUPUI%2F&tabs=timeline&width=500&height=804&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+            width="500" 
+            height="804" 
+            style="border:none;overflow:hidden;" 
+            scrolling="no" 
+            frameborder="0" 
+            allowTransparency="true"
+          ) 
+        
+        //instagram
+        div.col-md-4.instagramWidget
+          a.instagramWidget(href="https://instawidget.net/v/user/macatiupui" id="link-c4f91ddfb3d5e0a4310ed1e2dca7e3716ae920867ba245c2ea46087d074478df") 
+          
+          script(src="https://instawidget.net/js/instawidget.js?u=c4f91ddfb3d5e0a4310ed1e2dca7e3716ae920867ba245c2ea46087d074478df&width=500px")
+
+        //twitter
+        div.col-md-4
+          a.twitterWidget(
+            class="twitter-timeline"
+            data-theme="dark"
+            data-width="500"
+            data-height="804" 
+            href="https://twitter.com/MACatIUPUI"
+            data-aria-polite="assertive"
+          ) Tweets by MACatIUPUI
+
+          script(
+            async 
+            src="//platform.twitter.com/widgets.js" 
+            charset="utf-8"
+          ) 
+
+        
+        
+        

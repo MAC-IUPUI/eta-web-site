@@ -1,0 +1,84 @@
+extends ./shared/layout.pug
+
+
+block site_body
+      div.row.justify-content-md-right.section3
+        div.col-xs-12
+          h1.headline-lg contact. 
+          div.row
+            div.col-lg-5
+              div.section-small.float-right.loc
+                h3.quick.bold locations
+                p.quick.
+                  #[span.quick.bold.em mac.] #[br]
+                  815 west michigan street#[br]
+                  room B01#[br]
+                  indianapolis, IN 46202
+                  #[br]
+                  p: 317-274-7898
+                    
+                p.stat.quick.
+                  #[span.quick.bold.em mac stat.] #[br]
+                  755 west michigan street#[br]
+                  room 2135D#[br]
+                  indianapolis, IN 46202
+                  #[br]
+                  p: 317-274-7898 
+              div.section-small.float-right
+                h3.quick.bold hours
+                table.body.quick
+                  tr.contact-grey
+                    td &nbsp;
+                    td.time.bold Walk-In
+                    td.time.bold Online
+                  tr.contact-blue
+                    td.bold Sun
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-grey
+                    td.bold Mon
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-blue
+                    td.bold Tue
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-grey
+                    td.bold Wed
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-blue
+                    td.bold Thur
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-grey
+                    td.bold Fri
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+                  tr.contact-blue
+                    td.bold Sat
+                    td.time 12pm-9pm
+                    td.time 12pm-9pm
+            div.col-lg-6.section-small.contact-form
+              h3.quick.bold questions? 
+              p.sub send us a message.
+              div.body
+                form.contact(autocomplete="off")
+                  h6.quick.headline-xs.right name. 
+                  input.contact-grey(type="text" name="name" autofocus required)
+                    
+                  h6.quick.headline-xs.right email. 
+                  input.contact-blue(type="email" name="email" required)
+                    
+                  h6.quick.headline-xs.right subject. 
+                  input.contact-grey(type="text" name="subject" required)
+                    
+                  h6.quick.headline-xs.right message. 
+                  textarea.contact-blue(rows="5" name="message" required)
+                    
+                  input.quick(type="submit" id="submit" value="submit.") 
+            
+                  
+            
+              
+            

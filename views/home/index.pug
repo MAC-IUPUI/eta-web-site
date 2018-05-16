@@ -1,4 +1,27 @@
-extends ./shared/layout.pug
+extends ./shared/layout-index.pug
+
+block banner
+  h1 we're building a culture of collaboration.
+
 
 block site_body
-    h1 MAC Home Page
+      div.row.justify-content-md-center.section.color-blue
+        div.col-md-12
+          div.compress1
+            h2.headline-lg the mac &amp; mac stat.
+            p.sub they are not only for getting assistance on assignments, preparing for exams, and working with peer tutors,
+            p.body but also for collaboration with other students in a casual atmosphere. No appointment is necesary for visiting. Drop in any time during the open hours to work with a peer tutor or mentor. Our more than 120 tutuors and mentors are trained to guide you through the coursework in classes they themselves took.
+            a.button(href="/contact") find assistance.
+      
+      div.row.justify-content-md-center.section
+        div.col-md-12
+          div.compress1
+            h2.headline-lg everything you need #[br]to succeed.
+            p.sub We made class resources just for you.
+            p.body These resources include instructive shorts, class hand outs, formula sheets, study guides, practice examinations, and answer keys. They're designed to prepare you for mid-terms and final exams.
+            a.button(href="#") check 'em out.
+            
+            
+      div.row.justify-content-md-center.section.color-grey
+        div.col-md-12
+          h2.headline-lg what's happening.

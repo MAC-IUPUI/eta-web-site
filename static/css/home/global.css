@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+
+/* all site */
+
+html { font-size: 100%; }
+body { font-size: 1.3rem; font-family: "EB Garamond"; }
+h1   { font-size: 2.8rem; }
+h2   { font-size: 2.2rem; }
+h3   { font-size: 2.0rem; }
+h4   { font-size: 1.8rem; }
+h5   { font-size: 1.6rem; }
+h6   { font-size: 1.4rem; }
+
+#branding-bar {
+  position:static;
+}
+
+#branding-bar:after {
+    background: rgba(255, 255, 255, 0.0);
+}
+
+#main-body{
+  font-family:'Quicksand', sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  width:100%;
+}
+
+a, a:hover{
+  color:black;
+  text-decoration:none;
+  font-weight: 700;
+  letter-spacing: .08rem;
+}
+a:hover {
+  color:#F16978;
+
+}
+
+a.link{
+  color:#F16978;
+}
+
+a.link:hover{
+  color:#000;
+}
+
+.button, input#submit{
+  float:right;
+  background-color: #EDEEEF;
+  border: none;
+  font-weight: bold;
+  padding:.5% 1%;
+}
+
+button:hover, input#submit:hover{
+  color:#F16978;
+}
+
+
+li{
+  list-style-type: none;
+}
+
+.extra-space {
+  height:3rem;
+  width:100%;
+}
+
+.color-blue, .color-blue h2{
+  background-color: #b1ede8;
+  color:black;
+}
+
+.color-pink{
+  background-color:#F16978;
+}
+
+.color-grey, .color-grey h2{
+  background-color: #EDEEEF;
+  color:black;
+}
+
+.headline-lg{
+  font-family:'Quicksand', sans-serif;
+  font-weight:700;
+  font-size: 2.8rem;
+  color:#F16978;
+}
+
+.headline-sm{
+  font-family:'Quicksand', sans-serif;
+  font-weight:700;
+  font-size: 2.1rem;
+  color:#F16978;
+}
+
+.headline-xs{
+  font-family:'Quicksand', sans-serif;
+  font-weight:700;
+  font-size: 1.6rem;
+}
+
+p.sub{
+  text-align:right;
+  float:right;
+  font-size: 1.4rem;
+}
+
+.body{
+  font-family: "EB Garamond";
+  clear:both;
+  text-align:justify;
+}
+
+.pink { color:#F16978; }
+.blue { color:#b1ede8; }
+.grey { color:#EDEEEF; }
+
+.centered{
+  text-align:center;
+}
+.left{
+  text-align:left;
+}
+.right{
+  text-align:right;
+}
+.quick {
+  font-family:'Quicksand', sans-serif;
+}
+
+.quick-sm {
+  font-family:'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+
+.big {
+  font-size: 1.4rem;
+}
+
+.bold {
+  font-weight:700;
+}
+
+.em {
+  font-style: italic;
+}
+
+.ul{
+  text-decoration: underline;
+}
+
+.button.breakout {
+  float:none;
+}
+
+/* mobile */
+
+@media (max-aspect-ratio: 3/2){
+
+    div.banner h1{
+      font-weight:bolder;
+      color:#ef6a7a;
+      margin-top:5%;
+    }
+
+    .section{
+      padding:5% 0 4% 0;
+      margin:5% 0 0 0;
+    }
+
+    .section-small {
+      padding:1rem 0 1rem .2rem;
+      margin:.5rem auto .5rem auto;
+      width:100%;
+      display:block;
+    }
+
+    div.section2{
+      width:140%;
+      margin-top:10%;
+      margin-bottom:15%;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+
+    div.section3{
+      width:140%;
+      margin-top:10%;
+      margin-bottom:15%;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+
+    div.section-breakout{
+      width:200%;
+      margin-top:10%;
+      margin-left:-2rem;
+      padding:2rem 0;
+    }
+
+}
+
+/*desktop*/
+@media (min-aspect-ratio: 3/2){
+
+
+    div.banner h1{
+      font-weight:bolder;
+      font-size: 4rem;
+      color:#ef6a7a;
+      width:70%;
+      height:50%;
+      margin-top:10%;
+      margin-left:30%;
+      display:block;
+    }
+
+    div.compress1{
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+
+    .section{
+      padding:5% 20% 4% 20%;
+      margin:5% 0 0 0;
+      width:100%;
+    }
+    .section-small {
+      padding:1rem 0rem 1rem .8rem;
+      margin:.5rem 0 0 .5rem;
+      width:100%;
+    }
+
+    div.section2{
+      width:80%;
+      height:100%;
+      margin-top:10%;
+      margin-left:23%;
+      margin-bottom:5%;
+      display:block;
+    }
+
+    div.section3{
+      width:100%;
+      height:100%;
+      margin-top:10%;
+      margin-left:23%;
+      margin-bottom:5%;
+    }
+
+    div.section-breakout{
+      width:138.33%;
+      height:100%;
+      margin-top:10%;
+      margin-left:-2rem;
+      padding:2rem;
+    }
+
+    p.sub{
+      width:65%;
+    }
+
+}

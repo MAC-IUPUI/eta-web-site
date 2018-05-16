@@ -1,0 +1,57 @@
+html
+
+  head
+    title ticker
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700,800", rel="stylesheet", type="text/css")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+    link(rel="stylesheet" href="css/ticker/odometer-theme-train-station.css" type="text/css")
+    link(href="css/ticker/ticker.css" rel="stylesheet" type="text/css")
+    script(src="js/odometer.min.js")
+
+  body
+    div(class="container" id="ticker")
+      div(class="col-sm-12 ticker-col")
+        div(id="ticker-header")
+          h1 Welcome to the Mathematics Assistance Center!
+
+    div(class="ticker-row")
+      div(class="col-sm-7 ticker-col") 
+        div(class="ticker-box daily" id="ticker-daily-forecast")
+          h4(id="odometer" class="count odometer" data-type="today") 1000
+          h3(class="daily") Visitors Today
+
+    div(class="col-sm-5 ticker-col") 
+      div(class="ticker-box" id="ticker-visit-totals") 
+          h2 Visit Count 
+
+          div(id="counts") 
+            h4(class="count" data-type="semester") 11,280
+            br
+            p(class="sem") This Semester
+
+            h4(class="count" data-type="all") 11,280
+            br
+            p(class="all") All Time
+            
+    div(class="col-sm-12 ticker-col")
+      div(class="ticker-box" id="ticker-daily-forecast")
+        iframe(
+          class="chartjs-hidden-iframe", 
+          tabindex="-1", 
+          style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;")
+        canvas(
+          id="dailyChart",
+          width="701", 
+          height="241", 
+          style="display: block; height: 193px; width: 561px;")
+        h3 Visitor Forecast
+
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.12/system.js")
+    //-script(src="js/ticker.js")
+    
